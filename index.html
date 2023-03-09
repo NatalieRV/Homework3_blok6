@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function go() {
+            var name = document.getElementById('name').value
+            document.getElementById('out').innerText = "Привет, " + name
+            document.getElementById('name').value = ""
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>Добро пожаловать!</h1>
+    <h2>Домашняя работа № 3</h2>
+    <h3>Задание: Создать страницу, которая спрашивает имя у пользователя и выводит его с помощью функции</h3>
+    <input id="name" type="text" placeholder="Введите Ваше имя" value="">
+    <button onclick="go()">Ввод</button> <br>
+    <span id="out"></span>
+
+</body>
+
+</html>
